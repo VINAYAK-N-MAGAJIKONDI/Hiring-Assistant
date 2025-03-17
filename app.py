@@ -98,7 +98,7 @@ with st.sidebar:
         with col1:
             if st.button("Reset Conversation", key="reset_btn"):
                 SessionManager.reset_session()
-                st.experimental_rerun()
+                st.rerun()
         
         with col2:
             if st.button("Save Session", key="save_btn") and len(st.session_state.messages) > 1:
@@ -113,7 +113,7 @@ with st.sidebar:
             if selected_session != "Select a session..." and st.button("Load Session"):
                 if SessionManager.load_session(selected_session):
                     st.success(f"Session '{selected_session}' loaded successfully!")
-                    st.experimental_rerun()
+                    st.rerun()
 
 
 
@@ -158,7 +158,7 @@ with chat_container:
                     # Update session state
                     st.session_state.current_stage = "greeting"
                     
-                    st.experimental_rerun()
+                    st.rerun()
                 
                 except Exception as e:
                     st.error(f"Error generating initial greeting: {str(e)}")
@@ -170,7 +170,7 @@ with chat_container:
             if user_input:
                 # Process the message and get the response
                 conversation_handler.process_message(user_input)
-                st.experimental_rerun()
+                st.rerun()
         else:
             st.info("The conversation has ended. You can start a new conversation using the 'Reset Conversation' button in the sidebar.")
     else:
