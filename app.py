@@ -29,16 +29,16 @@ with st.sidebar:
     
     # API key input
     with st.container():
-        # st.subheader("API Configuration")
-        # api_key = st.text_input("Enter your Gemini API Key", type="password", key="api_key_input")
+        st.subheader("API Configuration")
+        api_key = st.text_input("Enter your Gemini API Key", type="password", key="api_key_input")
         
-        # if api_key:
+        if api_key:
             if "gemini_client" not in st.session_state or st.session_state.gemini_client is None:
-                st.session_state.gemini_client = GeminiClient()
-                # if st.session_state.gemini_client.is_initialized():
-                #     st.success("API connected successfully!")
-                # else:
-                #     st.error("Failed to initialize API client. Check your API key.")
+                st.session_state.gemini_client = GeminiClient(api_key)
+                if st.session_state.gemini_client.is_initialized():
+                    st.success("API connected successfully!")
+                else:
+                    st.error("Failed to initialize API client. Check your API key.")
     
     # Language selector
     with st.container():
