@@ -9,7 +9,7 @@ The TalentScout Hiring Assistant is an intelligent chatbot designed to streamlin
 1.  **Clone the Repository:**
 
     ```
-    git clone <repository_url>
+    git clone  https://github.com/VINAYAK-N-MAGAJIKONDI/Hiring-Assistant.git
     cd talentscout
     ```
 2.  **Create a Virtual Environment:**
