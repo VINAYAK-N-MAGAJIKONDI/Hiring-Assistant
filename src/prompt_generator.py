@@ -61,6 +61,7 @@ class PromptGenerator:
         2. Introduce yourself as a Hiring Assistant for TalentScout.
         3. Explain that you'll be asking some questions to understand their background and skills.
         4. Ask for their full name to begin the process.
+        Start with "Hello!...."
         """
     
     @staticmethod
