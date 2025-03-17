@@ -1,5 +1,8 @@
 # TalentScout Hiring Assistant
 
+## Try it at [https://vinayak-tsha.streamlit.app/](https://vinayak-tsha.streamlit.app/)
+
+
 ## Project Overview
 
 The TalentScout Hiring Assistant is an intelligent chatbot designed to streamline the initial candidate screening process for a fictional recruitment agency specializing in technology placements. This chatbot gathers essential candidate information and assesses their technical proficiency by posing relevant questions based on their declared tech stack. It uses a Streamlit interface and the Gemini 2.0 Flash language model to create an interactive and efficient recruitment tool.
