@@ -97,7 +97,7 @@ class ConversationHandler:
                 st.session_state.technical_assessment["answers"].append(message)
             
             # Check if technical assessment is complete
-            complete_keywords = ["done", "finished", "complete", "end", "that's all"]
+            complete_keywords = [ "end", "thank you"]
             if st.session_state.tech_questions_generated and any(keyword in message.lower() for keyword in complete_keywords):
                 st.session_state.current_stage = "conclusion"
                 st.session_state.technical_assessment["completed"] = True

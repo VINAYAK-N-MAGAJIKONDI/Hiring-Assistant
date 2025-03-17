@@ -1,16 +1,11 @@
 import streamlit as st
-import os
-import plotly.express as px
-from datetime import datetime
-
 from src.prompt_generator import PromptGenerator
 from src.gemini_client import GeminiClient
 from src.session_manager import SessionManager
 from src.conversation_handler import ConversationHandler
 from src.visualization import Visualization
-from src.language_detector import LanguageDetector
 from utils.helpers import load_custom_css
-from config import SUPPORTED_LANGUAGES, UI_THEME
+from config import SUPPORTED_LANGUAGES
 
 # Set page config
 st.set_page_config(
@@ -103,7 +98,7 @@ with st.sidebar:
         with col1:
             if st.button("Reset Conversation", key="reset_btn"):
                 SessionManager.reset_session()
-                st.experimental_rerunrerun()
+                st.experimental_rerun()
         
         with col2:
             if st.button("Save Session", key="save_btn") and len(st.session_state.messages) > 1:
