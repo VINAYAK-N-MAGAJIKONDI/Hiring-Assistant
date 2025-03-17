@@ -1,0 +1,12 @@
+google-genai
+streamlit
+python-dotenv
+textblob
+matplotlib
+wordcloud
+pandas
+langdetect
+pycountry
+plotly
+
+

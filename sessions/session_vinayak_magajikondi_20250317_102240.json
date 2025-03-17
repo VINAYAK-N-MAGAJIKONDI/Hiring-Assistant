@@ -1,0 +1,62 @@
+{
+    "timestamp": "2025-03-17T10:22:40.589911",
+    "candidate_info": {
+        "name": "Vinayak Magajikondi",
+        "email": "Vinayakmagajikondi@gmail.com",
+        "phone": null,
+        "experience": null,
+        "position": null,
+        "location": null,
+        "tech_stack": []
+    },
+    "messages": [
+        {
+            "role": "assistant",
+            "content": "Okay, great! Let's begin.\n\nHello! Welcome, and thank you for your interest in opportunities through TalentScout.\n\nMy name is TalentScout HA, and I'm a Hiring Assistant here at TalentScout. I'll be asking you a few questions to get a better understanding of your background and skills.\n\nTo start, could you please provide your full name?\n"
+        },
+        {
+            "role": "user",
+            "content": "Vinayak Magajikondi",
+            "timestamp": "2025-03-17T10:22:10.559858"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you, Vinayak. Now, could you please share your email address?\n",
+            "timestamp": "2025-03-17T10:22:12.934832"
+        },
+        {
+            "role": "user",
+            "content": "my email is Vinayakmagajikondi@gmail.com",
+            "timestamp": "2025-03-17T10:22:34.633022"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you, Vinayak.\n\nCould you please provide your phone number?\n",
+            "timestamp": "2025-03-17T10:22:36.592335"
+        }
+    ],
+    "current_stage": "gather_info",
+    "technical_assessment": {
+        "questions_asked": [],
+        "answers": [],
+        "evaluations": [],
+        "scores": {},
+        "overall_score": 0,
+        "completed": false
+    },
+    "sentiment_data": [
+        {
+            "message": "Vinayak Magajikondi",
+            "sentiment": "neutral",
+            "score": 0.0,
+            "timestamp": "2025-03-17T10:22:10.604100"
+        },
+        {
+            "message": "my email is Vinayakmagajikondi@gmail.com",
+            "sentiment": "neutral",
+            "score": 0.0,
+            "timestamp": "2025-03-17T10:22:34.633022"
+        }
+    ],
+    "language": "en"
+}
